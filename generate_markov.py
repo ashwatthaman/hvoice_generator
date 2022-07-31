@@ -2,7 +2,7 @@ import markovify
 import json,codecs
 
 def load_markov():
-    jdict = json.load(codecs.open("./model/markov.model",encoding="utf-8"))    
+    jdict = json.load(codecs.open("./markov.model",encoding="utf-8"))    
     model = markovify.NewlineText.from_dict(jdict)
     return model
 
