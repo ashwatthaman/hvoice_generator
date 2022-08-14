@@ -11,7 +11,7 @@ def generate_markov():
     
     for _ in range(10):
         output = text_model.make_sentence()
-        print("output",output)
+        print(output.replace(" ","").replace("▁",""))
     for _ in range(10):
         output1 = text_model.make_sentence_with_start(beginning="▁「 じゅるっ",strict=False)
         print(output1.replace(" ","").replace("▁",""))
